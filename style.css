@@ -1,0 +1,109 @@
+#gameDisplay{
+    position: relative;
+    width: 55%;
+    aspect-ratio: 16 / 9;
+    border: solid 5px brown;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    background-color: black;
+    background-image: url("space.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+#spaceShip{
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    width: 10%;
+    aspect-ratio: 1 / 1;
+    background-image: url("spaceship.png");
+    background-repeat: none;
+    background-size: contain;
+    z-index: 2;
+}
+.bullets{
+    position: absolute;
+    width: 2%;
+    aspect-ratio: 1 / 2;
+    background-image: url("bullet.png");
+    background-repeat: none;
+    background-size: contain;
+    transform: translateX(-50%);
+    bottom: 0;
+    z-index: 1;
+}
+.enemies{
+    position: absolute;
+    width: 5%;
+    aspect-ratio: 1 / 1;
+    background-image: url("enemy.png");
+    background-repeat: none;
+    background-size: contain;
+    top: 0;
+    z-index: 2;
+}
+
+#control{
+    position: fixed;
+    left: 5%;
+    bottom: 5px;
+    width: 90%;
+    height: 30px;
+    z-index: 3;
+    opacity: 0.5;
+}
+#leftB{
+    width: 25%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    height: 30px;
+    box-sizing: border-box;
+    margin: 0 0 0 0;
+    background-color: skyblue;
+    border: none;
+}
+#shootB{
+    width: 40%;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 30px;
+    box-sizing: border-box;
+    background-color: lightcoral;
+    border: none;
+}
+#rightB{
+    width: 25%;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 30px;
+    box-sizing: border-box;
+    margin: 0 0 0 0;
+    background-color: skyblue;
+    border: none;
+}
+
+#result{
+    position: fixed;
+    width: min(80vw, 80vh);
+    aspect-ratio: 1 / 1;
+    background-color: white;
+    border: solid 3px black;
+    border-radius: 5px;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    display: none;
+}
+#startInfo{
+    position: fixed;
+    width: 80%;
+    background-color: white;
+    border: solid 3px black;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    opacity: 0.9;
+}
